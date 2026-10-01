@@ -12,7 +12,7 @@
 <link rel="icon" href="https://6ab97a0a0b89b5ada856266b--2kyd-agency.netlify.app/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --ivory:#f7f3eb;--paper:#fffdf8;--ink:#171713;--muted:#655f56;--line:#ded7ca;
@@ -261,13 +261,16 @@ header{background:rgba(15,74,54,.94);border-bottom-color:rgba(224,180,60,.35)}
       <p>Lumière naturelle, émotions vraies, cadrages soignés.</p>
     </div>
     <div class="gallery">
-      <figure class="tall"><img src="https://6ab97a0a0b89b5ada856266b--2kyd-agency.netlify.app/assets/photo/bride.jpg" alt="Mariage" loading="lazy"><figcaption>Mariage</figcaption></figure>
-      <figure class="wide"><img src="https://6ab97a0a0b89b5ada856266b--2kyd-agency.netlify.app/assets/photo/reception.jpg" alt="Réception" loading="lazy"><figcaption>Réception</figcaption></figure>
-      <figure class="tall"><img src="https://6ab97a0a0b89b5ada856266b--2kyd-agency.netlify.app/assets/photo/photographer.jpg" alt="Shooting" loading="lazy"><figcaption>Shooting</figcaption></figure>
-      <figure class="placeholder"><div><b>+</b>Dot</div></figure>
-      <figure class="placeholder"><div><b>+</b>Anniversaire</div></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG" alt="Mariés posant devant la salle de réception" loading="lazy"><figcaption>Mariage</figcaption></figure>
+      <figure class="wide"><img src="https://images.pixieset.com/427825321/6279dd69ebfec5ecbce357fb47ff45ff-large.JPG" alt="Les mariés côte à côte pendant la dot" loading="lazy"><figcaption>Dot</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/c09ada4c3f966d8359529d6fbc443ac6-large.JPG" alt="Portrait de la mariée en tenue traditionnelle" loading="lazy"><figcaption>Dot</figcaption></figure>
+      <figure><img src="https://images.pixieset.com/427825321/e1aea84ced62e347c3363cad5ad26bce-large.JPG" alt="Main ornée de henné et bague de fiançailles" loading="lazy"><figcaption>Détails</figcaption></figure>
+      <figure><img src="https://images.pixieset.com/427825321/c3ff540bef5772253f1a4511d6f9b3ca-large.JPG" alt="Le marié en tenue traditionnelle bleu et or" loading="lazy"><figcaption>Dot</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/38f0cd067548b84b8ee493fc57f90cd0-large.JPG" alt="Entrée des mariés main dans la main" loading="lazy"><figcaption>Mariage</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/2dadde4d2823676a5443f916ed5e9b1a-large.JPG" alt="La mariée émue à côté du marié" loading="lazy"><figcaption>Émotion</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/30c99a1f4dc4a89f812121ac52c9a88b-large.JPG" alt="Table de réception décorée en bleu roi" loading="lazy"><figcaption>Réception</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/e087ed15966b5a2432336cfd6467508c-large.JPG" alt="Portrait noir et blanc des mariés" loading="lazy"><figcaption>Portrait</figcaption></figure>
     </div>
-    <p class="note">Galerie en cours d'enrichissement : certaines images sont des visuels d'illustration.</p>
     <div class="gallery-cta">
       <a class="btn btn-ghost" href="https://www.instagram.com/2kydagency" target="_blank" rel="noopener">Plus de photos sur Instagram @2kydagency</a>
     </div>
@@ -479,5 +482,95 @@ header.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.25)}
   }
 })();
 </script>
+
+<!-- ===== Thème corail + typo 2KYD ===== -->
+<style id="theme-2kyd">
+/* =========================================================
+   2KYD Agency — Thème « Corail & Bougainvillier »
+   Inspiré de la photo de table (corail, fuchsia, rotin, crème, sauge).
+   À coller TOUT EN BAS de ton CSS (après le bloc vert & or actuel) :
+   il remplace les couleurs sans toucher au reste.
+   ========================================================= */
+:root {
+  --ivory: #fbf3ea;      /* fond crème chaud */
+  --paper: #fffaf4;      /* cartes */
+  --ink: #2b1a17;        /* texte principal */
+  --muted: #7a625a;      /* texte secondaire */
+  --line: #ecd9c7;       /* bordures */
+
+  --gold: #f07a4a;       /* accent principal : corail-orangé (boutons, prix) */
+  --gold-soft: #fbd9c6;  /* corail pâle (badges, fonds légers) */
+  --gold-deep: #b4442a;  /* corail foncé (textes accent sur fond clair) */
+
+  --dark: #5c2333;       /* sections sombres : bois de rose */
+  --dark-soft: #7a3045;
+  --shadow: 0 24px 60px rgba(92, 35, 51, .18);
+
+  /* nouvelles couleurs d'appoint */
+  --fuchsia: #e0457b;
+  --rattan: #c9a27a;
+  --sage: #8fa67f;
+}
+
+header {
+  background: rgba(92, 35, 51, .94);
+  border-bottom-color: rgba(240, 122, 74, .35);
+}
+.hero {
+  background: radial-gradient(1200px 600px at 85% 20%, #9b3b52 0%, #5c2333 55%, #431824 100%);
+}
+.dark {
+  background: linear-gradient(160deg, #5c2333 0%, #431824 100%);
+}
+.cta {
+  background: linear-gradient(135deg, #5c2333 0%, #8a2f4a 60%, #b4442a 100%);
+}
+.gallery figcaption { background: rgba(67, 24, 36, .78); }
+.gallery .placeholder { border-color: rgba(240, 122, 74, .45); }
+
+/* Bouton principal : dégradé corail → fuchsia, comme les bouquets */
+.btn-gold {
+  background: linear-gradient(135deg, #f28c38 0%, #f07a4a 45%, #e0457b 100%);
+  color: #fff;
+}
+.btn-gold:hover { filter: brightness(1.06); }
+
+/* --- Polices --- */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
+h1, h2, h3, .price, .badge strong, .logo > span {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;              /* Instrument Serif n'existe qu'en 400 : fin et chic */
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  font-variant-numeric: lining-nums;
+}
+.btn, nav a { font-weight: 500; }
+
+/* --- Tailles plus douces --- */
+.hero h1 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); margin-bottom: 18px; }
+.section-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+.hero p.lead { font-size: 1rem; line-height: 1.7; }
+.eyebrow { font-size: .72rem; letter-spacing: .22em; }
+
+/* --- Photo du haut plus petite --- */
+.hero { padding: 56px 0 72px; }
+.hero-grid { grid-template-columns: 1.2fr .8fr; gap: 48px; }
+.hero-visual { max-width: 360px; justify-self: end; }
+.hero-visual img.main { aspect-ratio: 4 / 5; object-fit: cover; }
+
+/* Téléphone : photo centrée et compacte */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero-visual { max-width: 300px; justify-self: center; }
+  .hero h1 { font-size: clamp(2.1rem, 8.5vw, 2.7rem); }
+}
+
+.gallery{grid-auto-flow:dense}
+.gallery img{object-position:center 25%}
+.card:hover,.plan:hover,.step:hover{box-shadow:0 22px 45px rgba(92,35,51,.22)}
+</style>
 </body>
 </html>
