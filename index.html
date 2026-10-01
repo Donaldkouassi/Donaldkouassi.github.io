@@ -63,6 +63,9 @@
   --shadow-hover: 0 22px 45px rgba(92, 35, 51, .22);
   --wrap: 1160px;
   --ease: cubic-bezier(.2, .7, .2, 1);
+
+  /* Photo du haut de page (téléphone : en fond) */
+  --hero-photo: url("https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG");
 }
 
 /* ---------- 2. Base ---------- */
@@ -179,11 +182,12 @@ header.scrolled { box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
   animation: glow 16s ease-in-out infinite;
 }
 .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: center; }
-.hero h1 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); margin-bottom: 18px; }
+.hero .eyebrow { color: #ffb38f; }          /* corail clair : lisible sur fond sombre */
+.hero h1 { font-size: clamp(2.6rem, 4.8vw, 3.8rem); margin-bottom: 18px; text-wrap: balance; }
 .hero h1 em { font-style: italic; color: var(--accent); }
-.hero .lead { color: var(--on-dark-muted); font-size: 1rem; line-height: 1.7; max-width: 520px; margin-bottom: 32px; }
+.hero .lead { color: #f1e3dc; font-size: 1.05rem; line-height: 1.65; max-width: 520px; margin-bottom: 32px; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
-.hero-points { display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: .9rem; color: var(--on-dark-muted); }
+.hero-points { display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: .9rem; color: #ead8d0; }
 .hero-points span::before { content: "✦ "; color: var(--accent); }
 
 .hero-visual { position: relative; max-width: 360px; justify-self: end; }
@@ -377,9 +381,28 @@ footer a:hover { color: var(--accent); }
 
 /* ---------- 4. Responsive ---------- */
 @media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
-  .hero h1 { font-size: clamp(2.1rem, 8.5vw, 2.7rem); }
-  .hero-visual { max-width: 300px; justify-self: center; }
+  /* Haut de page téléphone : la photo en plein écran derrière le texte */
+  .hero {
+    position: relative;
+    display: flex; align-items: flex-end;
+    min-height: calc(100svh - 72px);
+    padding: 40px 0 36px;
+    background:
+      linear-gradient(180deg, rgba(67, 24, 36, .15) 0%, rgba(67, 24, 36, .55) 40%, rgba(52, 17, 28, .96) 78%),
+      var(--hero-photo) center 18% / cover no-repeat;
+    animation: none;
+  }
+  .hero-grid { grid-template-columns: 1fr; gap: 0; width: 100%; }
+  .hero-visual { display: none; }
+  .hero .eyebrow { font-size: .68rem; letter-spacing: .18em; margin-bottom: 10px; }
+  .hero h1 { font-size: clamp(2.7rem, 12vw, 3.4rem); line-height: 1.02; margin-bottom: 14px; text-shadow: 0 2px 24px rgba(0, 0, 0, .35); }
+  .hero .lead { font-size: 1rem; line-height: 1.55; margin-bottom: 24px; color: #f6ebe5; }
+  .hero-ctas { flex-wrap: nowrap; gap: 10px; margin-bottom: 22px; }
+  .hero-ctas .btn { flex: 1; justify-content: center; padding: 14px 12px; font-size: .92rem; white-space: nowrap; }
+  .hero-ctas .btn-ghost { background: rgba(255, 250, 244, .1); backdrop-filter: blur(6px); }
+  .hero-points { gap: 8px; font-size: .78rem; }
+  .hero-points span { background: rgba(255, 250, 244, .12); border: 1px solid rgba(255, 250, 244, .18); padding: 5px 10px; border-radius: 999px; }
+  .hero-points span::before { content: "✦ "; }
   .plans { grid-template-columns: 1fr; max-width: 460px; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
@@ -472,7 +495,7 @@ footer a:hover { color: var(--accent); }
       </div>
     </div>
     <div class="hero-visual">
-      <img class="main" src="https://6ab97a0a0b89b5ada856266b--2kyd-agency.netlify.app/assets/photo/bride.jpg" alt="Photo de mariage">
+      <img class="main" src="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG" alt="Mariés photographiés par 2KYD à Abidjan">
       <div class="badge"><strong>Abidjan</strong><span>& environs · déplacements possibles</span></div>
     </div>
   </div>
