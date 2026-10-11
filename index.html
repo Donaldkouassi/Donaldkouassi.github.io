@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2KYD Agency — Photographe événementiel à Abidjan</title>
-<meta name="description" content="2KYD Agency, photographe à Abidjan : mariage, dot, anniversaire, baptême et shooting portrait. Photos naturelles, retouchées et livrées en haute définition. Offres pro : photos de plats, produits et aménagement virtuel immobilier. Réservation sur WhatsApp.">
+<title>2KYD Agency — Agence de communication digitale 360° à Abidjan</title>
+<meta name="description" content="2KYD Agency, agence de communication digitale à Abidjan : création de sites web, gestion des réseaux sociaux, photo & vidéo, présentations PowerPoint B2B livrées en 24 h. Devis sur WhatsApp.">
 <meta name="theme-color" content="#5c2333">
 <meta property="og:type" content="website">
-<meta property="og:title" content="2KYD Agency — Photographe événementiel à Abidjan">
-<meta property="og:description" content="Mariage, dot, anniversaire, baptême, shooting. Réservez votre date sur WhatsApp.">
-<meta property="og:image" content="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="2KYD Agency">
+<meta property="og:title" content="2KYD Agency — Créer • Communiquer • Impacter">
+<meta property="og:description" content="Agence digitale 360° à Abidjan : web, réseaux sociaux, photo & vidéo, supports B2B.">
+<meta property="og:image" content="https://2kydagency.me/assets/demo/salon-apres.jpg">
 <meta property="og:url" content="https://2kydagency.me/">
 <link rel="canonical" href="https://2kydagency.me/">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -17,7 +19,33 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "2KYD Agency",
+  "slogan": "Créer • Communiquer • Impacter",
+  "description": "Agence de communication digitale 360° à Abidjan : création de sites web, gestion des réseaux sociaux, photo et vidéo, supports de présentation B2B.",
+  "url": "https://2kydagency.me/",
+  "logo": "https://2kydagency.me/assets/logo-2kyd.png",
+  "image": "https://2kydagency.me/assets/demo/salon-apres.jpg",
+  "telephone": "+2250778639867",
+  "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" },
+  "areaServed": ["Côte d'Ivoire", "Afrique de l'Ouest", "International francophone"],
+  "sameAs": ["https://www.instagram.com/2kydagency"],
+  "knowsAbout": ["Création de sites web", "Référencement SEO", "Social Media Management", "Photographie professionnelle", "Présentations PowerPoint"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services 2KYD Agency",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de site web et SEO" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestion des réseaux sociaux" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photographie événementielle, culinaire et immobilière" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "L'usine à slides : remise en page de présentations en 24 h" } }
+    ]
+  }
+}
+</script>
 <style>
 /* =========================================================
    2KYD Agency — feuille de style unique
@@ -66,7 +94,7 @@
   --ease: cubic-bezier(.2, .7, .2, 1);
 
   /* Photo du haut de page (téléphone : en fond) */
-  --hero-photo: url("https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG");
+  --hero-photo: url("assets/demo/salon-apres.jpg");
 }
 
 /* ---------- 2. Base ---------- */
@@ -309,8 +337,8 @@ header.scrolled { box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
 /* Professionnels */
 .pro { background: linear-gradient(180deg, var(--bg) 0%, #f7e3d3 100%); }
 .pro .plans { margin-bottom: 22px; }
-.pro .plan .unit { font-size: .85rem; color: var(--text-muted); }
-.pro .plan.featured .unit { color: var(--on-dark-muted); }
+.plan .unit { font-size: .85rem; color: var(--text-muted); }
+.plan.featured .unit { color: var(--on-dark-muted); }
 .subs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .sub {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px;
@@ -547,6 +575,38 @@ footer a:hover { color: var(--accent); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .hero .eyebrow, .hero h1, .hero .lead, .hero-ctas, .hero-points, .hero-visual, .rv { opacity: 1; transform: none; }
 }
+
+/* ---------- Agence 360° ---------- */
+.dark .section-head h2 em { color: var(--accent); }
+.expertise .card { display: block; }
+.expertise .more { display: inline-block; margin-top: 14px; font-size: .88rem; font-weight: 700; color: var(--accent-deep); }
+.offer-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+.offer-tabs button {
+  font: inherit; font-size: .92rem; font-weight: 600;
+  padding: 10px 18px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--text);
+  cursor: pointer; transition: background .2s, color .2s, border-color .2s;
+}
+.offer-tabs button:hover { border-color: var(--accent); }
+.offer-tabs button[aria-selected="true"] { background: var(--dark); color: var(--on-dark); border-color: var(--dark); }
+.offer-panel .subs { margin-top: 22px; }
+.offer-panel[hidden] { display: none; }
+.slides-section { background: linear-gradient(180deg, var(--bg) 0%, #f7e3d3 100%); }
+.slides-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 36px; }
+.slides-steps div { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--r-md); padding: 20px 22px; }
+.slides-steps strong { display: block; font-family: var(--font-title); font-weight: 400; font-size: 1.5rem; color: var(--accent-deep); margin-bottom: 6px; }
+.slides-steps span { font-size: .93rem; color: var(--text-muted); }
+.plans-4 { grid-template-columns: repeat(4, 1fr); }
+.plans-4 .plan { padding: 30px 22px; }
+.plans-4 .price { font-size: 1.9rem; }
+.dark .ba-block { margin-bottom: 48px; }
+.dark .ba-info p, .dark .ba-note, .dark .ba-hint { color: var(--on-dark-muted); }
+.dark .ba-tabs button { background: transparent; color: var(--on-dark); border-color: rgba(255, 250, 244, .3); }
+.dark .ba-tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (max-width: 1080px) { .plans-4 { grid-template-columns: repeat(2, 1fr); max-width: none; } }
+@media (max-width: 960px) { .slides-steps { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .plans-4 { grid-template-columns: 1fr; max-width: 460px; } }
 </style>
 </head>
 <body>
@@ -554,146 +614,89 @@ footer a:hover { color: var(--accent); }
   <div class="wrap nav" id="nav">
     <a href="#accueil" class="logo">
       <img src="assets/logo-2kyd.png" alt="Logo 2KYD Agency" width="42" height="42">
-      <span>2KYD<small>PHOTOGRAPHIE</small></span>
+      <span>2KYD<small>AGENCE DIGITALE</small></span>
     </a>
     <ul>
-      <li><a href="#prestations">Prestations</a></li>
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#forfaits">Forfaits</a></li>
-      <li><a href="#pro">Professionnels</a></li>
-      <li><a href="#deroulement">Déroulement</a></li>
+      <li><a href="#expertises">Expertises</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#offres">Offres</a></li>
+      <li><a href="#slides">Usine à slides</a></li>
+      <li><a href="#methode">Méthode</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite réserver une date.">Réserver une date</a>
+    <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite un devis pour mon projet.">Demander un devis</a>
     <button class="burger" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
   </div>
 </header>
 
+<main>
 <section class="hero" id="accueil">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Photographe événementiel · Abidjan</p>
-      <h1>Vos plus beaux moments, <em>immortalisés</em>.</h1>
-      <p class="lead">Mariage, dot, anniversaire, baptême ou shooting : des photos naturelles, retouchées avec soin et livrées en haute définition.</p>
+      <p class="eyebrow">Agence de communication digitale 360° · Abidjan</p>
+      <h1>Créer. Communiquer. <em>Impacter.</em></h1>
+      <p class="lead">Sites web, gestion des réseaux sociaux, photo &amp; vidéo, présentations B2B : 2KYD conçoit et pilote votre image de A à Z, avec un seul interlocuteur.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite vérifier la disponibilité d'une date.">
+        <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite un devis pour mon projet.">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>
-          Vérifier ma date
+          Demander un devis
         </a>
-        <a class="btn btn-ghost" href="#forfaits">Voir les forfaits</a>
+        <a class="btn btn-ghost" href="#expertises">Nos expertises</a>
       </div>
       <div class="hero-points">
-        <span>Retouches incluses</span>
-        <span>Livraison en ligne HD</span>
-        <span>Wave / Mobile Money</span>
+        <span>Web &amp; SEO</span>
+        <span>Social Media</span>
+        <span>Photo &amp; Vidéo</span>
+        <span>Supports B2B</span>
       </div>
     </div>
     <div class="hero-visual">
-      <img class="main" src="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG" alt="Mariés photographiés par 2KYD à Abidjan">
-      <div class="badge"><strong>Abidjan</strong><span>& environs · déplacements possibles</span></div>
+      <img class="main" src="assets/demo/salon-apres.jpg" alt="Visuel immobilier réalisé par 2KYD Agency" width="1200" height="897">
+      <div class="badge"><strong>4 pôles</strong><span>1 seule agence, de la stratégie à la publication</span></div>
     </div>
   </div>
 </section>
 
-<section id="prestations">
+<section id="expertises">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Prestations</p>
-      <h2>Un photographe pour chaque grand moment.</h2>
-      <p>Chaque événement est unique. On échange avant le jour J pour comprendre vos attentes, vos proches et les moments à ne surtout pas manquer.</p>
+      <p class="eyebrow">Nos expertises</p>
+      <h2>Tout ce qu'il faut pour être <em>vu</em>, compris et choisi.</h2>
+      <p>On combine stratégie, création et diffusion. Vous avancez avec une équipe qui connaît votre marque sur tous vos canaux.</p>
     </div>
-    <div class="cards">
-      <div class="card"><div class="ico">💍</div><h3>Mariage & dot</h3><p>Préparatifs, cérémonie, cortège, réception : toute l'histoire de votre journée.</p></div>
-      <div class="card"><div class="ico">🎂</div><h3>Anniversaire</h3><p>Ambiance, invités, gâteau, surprises : des images pleines de vie.</p></div>
-      <div class="card"><div class="ico">🕊️</div><h3>Baptême & cérémonies</h3><p>Des souvenirs de famille sobres et élégants, à garder pour toujours.</p></div>
-      <div class="card"><div class="ico">📸</div><h3>Shooting portrait</h3><p>Portrait solo, couple, famille ou photo professionnelle pour LinkedIn et CV.</p></div>
+    <div class="cards expertise">
+      <a class="card" href="#offres" data-tab="web">
+        <div class="ico">💻</div><h3>Web &amp; SEO</h3>
+        <p>Sites vitrines rapides et pensés mobile, référencement Google, maintenance.</p>
+        <span class="more">Voir les offres →</span>
+      </a>
+      <a class="card" href="#offres" data-tab="social">
+        <div class="ico">📱</div><h3>Social Media</h3>
+        <p>Stratégie, calendrier éditorial, création de posts et Reels, modération Facebook &amp; Instagram.</p>
+        <span class="more">Voir les offres →</span>
+      </a>
+      <a class="card" href="#offres" data-tab="photo">
+        <div class="ico">📸</div><h3>Photo &amp; Vidéo</h3>
+        <p>Événementiel, culinaire, produits, immobilier et aménagement virtuel.</p>
+        <span class="more">Voir les offres →</span>
+      </a>
+      <a class="card" href="#slides">
+        <div class="ico">📊</div><h3>Supports B2B</h3>
+        <p>L'usine à slides : vos présentations PowerPoint remises en page et livrées sous 24 h.</p>
+        <span class="more">Découvrir →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="dark" id="galerie">
+<section class="dark" id="realisations">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Galerie</p>
-      <h2>Un aperçu de notre regard.</h2>
-      <p>Lumière naturelle, émotions vraies, cadrages soignés.</p>
-    </div>
-    <div class="gallery">
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG" alt="Mariés posant devant la salle de réception" loading="lazy"><figcaption>Mariage</figcaption></figure>
-      <figure class="wide"><img src="https://images.pixieset.com/427825321/6279dd69ebfec5ecbce357fb47ff45ff-large.JPG" alt="Les mariés côte à côte pendant la dot" loading="lazy"><figcaption>Dot</figcaption></figure>
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/c09ada4c3f966d8359529d6fbc443ac6-large.JPG" alt="Portrait de la mariée en tenue traditionnelle" loading="lazy"><figcaption>Dot</figcaption></figure>
-      <figure><img src="https://images.pixieset.com/427825321/e1aea84ced62e347c3363cad5ad26bce-large.JPG" alt="Main ornée de henné et bague de fiançailles" loading="lazy"><figcaption>Détails</figcaption></figure>
-      <figure><img src="https://images.pixieset.com/427825321/c3ff540bef5772253f1a4511d6f9b3ca-large.JPG" alt="Le marié en tenue traditionnelle bleu et or" loading="lazy"><figcaption>Dot</figcaption></figure>
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/38f0cd067548b84b8ee493fc57f90cd0-large.JPG" alt="Entrée des mariés main dans la main" loading="lazy"><figcaption>Mariage</figcaption></figure>
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/2dadde4d2823676a5443f916ed5e9b1a-large.JPG" alt="La mariée émue à côté du marié" loading="lazy"><figcaption>Émotion</figcaption></figure>
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/30c99a1f4dc4a89f812121ac52c9a88b-large.JPG" alt="Table de réception décorée en bleu roi" loading="lazy"><figcaption>Réception</figcaption></figure>
-      <figure class="tall"><img src="https://images.pixieset.com/427825321/e087ed15966b5a2432336cfd6467508c-large.JPG" alt="Portrait noir et blanc des mariés" loading="lazy"><figcaption>Portrait</figcaption></figure>
-    </div>
-    <div class="gallery-cta">
-      <a class="btn btn-ghost" href="https://www.instagram.com/2kydagency" target="_blank" rel="noopener">Plus de photos sur Instagram @2kydagency</a>
-    </div>
-  </div>
-</section>
-
-<section id="forfaits">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Forfaits</p>
-      <h2>Des tarifs clairs, sans surprise.</h2>
-      <p>Trois formules pour démarrer. Besoin d'autre chose ? On construit un devis sur mesure.</p>
-    </div>
-    <div class="plans">
-      <div class="plan">
-        <h3>Shooting</h3>
-        <p class="for">Portrait, couple, famille, photo pro</p>
-        <div class="price">35 000 <small>F CFA</small></div>
-        <ul>
-          <li>1 h de séance</li>
-          <li>1 lieu à Abidjan</li>
-          <li>15 photos retouchées</li>
-          <li>Livraison sous 5 jours</li>
-        </ul>
-        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour, je suis intéressé(e) par le forfait Shooting.">Choisir Shooting</a>
-      </div>
-      <div class="plan featured">
-        <span class="tag">Le plus demandé</span>
-        <h3>Événement</h3>
-        <p class="for">Anniversaire, baptême, dot</p>
-        <div class="price">110 000 <small>F CFA</small></div>
-        <ul>
-          <li>Jusqu'à 5 h de couverture</li>
-          <li>100 photos retouchées</li>
-          <li>Galerie en ligne privée</li>
-          <li>Livraison sous 10 jours</li>
-        </ul>
-        <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour, je suis intéressé(e) par le forfait Événement.">Choisir Événement</a>
-      </div>
-      <div class="plan">
-        <h3>Mariage</h3>
-        <p class="for">Mariage civil, religieux ou dot + mariage</p>
-        <div class="price"><small class="from">À partir de</small>200 000 <small>F CFA</small></div>
-        <ul>
-          <li>Journée complète</li>
-          <li>250 photos retouchées</li>
-          <li>Séance couple offerte</li>
-          <li>Galerie en ligne + clé USB</li>
-        </ul>
-        <p class="budget-note">💬 <strong>Votre mariage, votre budget.</strong> Appelez-nous : on adapte la formule à votre budget.<br><a href="tel:+2250778639867">📞 07 78 63 98 67</a></p>
-        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour, je prépare mon mariage et j'aimerais une formule adaptée à mon budget.">Parler de mon budget</a>
-      </div>
-    </div>
-    <p class="plans-note">Acompte de 50 % pour bloquer la date · Paiement Wave / Mobile Money · Frais de déplacement hors Abidjan sur devis</p>
-  </div>
-</section>
-
-<section class="pro" id="pro">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">2KYD Pro · Restaurants, boutiques, immobilier</p>
-      <h2>Vos vrais produits, <em>sublimés</em>.</h2>
-      <p>Des photos qui donnent envie de commander, d'acheter ou de visiter. On photographie le réel, puis on le met en valeur grâce à la retouche assistée par IA : lumière, cadrage, fonds, formats prêts pour Instagram, Glovo, Yango ou vos annonces.</p>
+      <p class="eyebrow">Réalisations</p>
+      <h2>Notre regard, au service de votre image.</h2>
+      <p>Un aperçu de nos productions photo. Glissez le curseur pour voir la différence avant / après.</p>
     </div>
     <div class="ba-block" id="avant-apres">
       <div>
@@ -717,76 +720,305 @@ footer a:hover { color: var(--accent); }
         <p class="ba-note">Exemple de démonstration : images générées par IA pour illustrer le rendu. Ce ne sont pas des travaux de clients.</p>
       </div>
     </div>
-    <div class="plans">
-      <div class="plan">
-        <h3>Retouche Express</h3>
-        <p class="for">Vous avez déjà des photos ? On les remet à niveau.</p>
-        <div class="price">25 000 <small>F CFA</small></div>
-        <p class="unit">le pack de 10 photos</p>
-        <ul>
-          <li>Lumière, couleurs et netteté corrigées</li>
-          <li>Recadrage et fonds nettoyés</li>
-          <li>Formats réseaux sociaux et plateformes</li>
-          <li>Livraison sous 72 h</li>
-        </ul>
-        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite faire retoucher mes photos (Retouche Express).">Envoyer mes photos</a>
-      </div>
-      <div class="plan featured">
-        <span class="tag">Idéal restaurants</span>
-        <h3>Shooting Food & Produit</h3>
-        <p class="for">Menu, plats, vitrine, produits de boutique</p>
-        <div class="price">75 000 <small>F CFA</small></div>
-        <p class="unit">séance sur place, 2 à 3 h</p>
-        <ul>
-          <li>Jusqu'à 20 plats ou produits</li>
-          <li>Retouche professionnelle + optimisation IA</li>
-          <li>Visuels pour menu, Glovo, Yango, Instagram</li>
-          <li>Livraison sous 5 jours</li>
-        </ul>
-        <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un shooting Food & Produit pour mon établissement.">Réserver un shooting</a>
-      </div>
-      <div class="plan">
-        <h3>Aménagement virtuel</h3>
-        <p class="for">Agences immobilières, promoteurs, bailleurs</p>
-        <div class="price">40 000 <small>F CFA</small></div>
-        <p class="unit">le pack de 6 pièces · 8 000 F la pièce</p>
-        <ul>
-          <li>Pièces vides meublées et décorées virtuellement</li>
-          <li>Plusieurs styles au choix</li>
-          <li>Mention « aménagement virtuel » incluse</li>
-          <li>Livraison sous 72 h</li>
-        </ul>
-        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un devis pour de l'aménagement virtuel de biens immobiliers.">Demander un devis</a>
-      </div>
+    <div class="gallery">
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG" alt="Mariés posant devant la salle de réception" loading="lazy"><figcaption>Photo · Mariage</figcaption></figure>
+      <figure class="wide"><img src="https://images.pixieset.com/427825321/6279dd69ebfec5ecbce357fb47ff45ff-large.JPG" alt="Les mariés côte à côte pendant la dot" loading="lazy"><figcaption>Photo · Dot</figcaption></figure>
+      <figure class="tall"><img src="https://images.pixieset.com/427825321/c09ada4c3f966d8359529d6fbc443ac6-large.JPG" alt="Portrait de la mariée en tenue traditionnelle" loading="lazy"><figcaption>Photo · Portrait</figcaption></figure>
+      <figure><img src="https://images.pixieset.com/427825321/e1aea84ced62e347c3363cad5ad26bce-large.JPG" alt="Main ornée de henné et bague de fiançailles" loading="lazy"><figcaption>Photo · Détails</figcaption></figure>
+      <figure><img src="https://images.pixieset.com/427825321/30c99a1f4dc4a89f812121ac52c9a88b-large.JPG" alt="Table de réception décorée en bleu roi" loading="lazy"><figcaption>Photo · Réception</figcaption></figure>
     </div>
-    <div class="subs">
-      <div class="sub">
-        <div><h3>Abonnement Resto</h3><p>1 mini-shooting par mois + 10 visuels retouchés pour vos réseaux et nouveautés.</p></div>
-        <div class="price">60 000 <small>F / mois</small></div>
-      </div>
-      <div class="sub">
-        <div><h3>Abonnement Immobilier</h3><p>20 pièces retouchées ou aménagées chaque mois pour vos nouvelles annonces.</p></div>
-        <div class="price">120 000 <small>F / mois</small></div>
-      </div>
-    </div>
-    <p class="pro-promise"><span>🤝</span><span><strong>Notre engagement :</strong> on améliore vos vraies photos, on n'invente rien. Pas de plat retouché au point de ne plus ressembler à l'assiette servie, et chaque visuel immobilier modifié porte la mention « aménagement virtuel ».</span></p>
-    <div class="pro-ctas">
-      <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je suis un professionnel et j'aimerais un exemple avant/après sur une de mes photos.">Recevoir un avant/après gratuit</a>
+    <div class="gallery-cta">
+      <a class="btn btn-ghost" href="https://www.instagram.com/2kydagency" target="_blank" rel="noopener">Suivre nos projets sur Instagram @2kydagency</a>
     </div>
   </div>
 </section>
 
-<section class="dark" id="deroulement">
+<section id="offres">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Déroulement</p>
-      <h2>Simple, du premier message à la livraison.</h2>
+      <p class="eyebrow">Offres</p>
+      <h2>Des formules claires, pour chaque besoin.</h2>
+      <p>Choisissez un pôle ou combinez-les : on construit aussi des devis sur mesure.</p>
+    </div>
+    <div class="offer-tabs" role="tablist" aria-label="Pôles">
+      <button type="button" role="tab" data-tab="web" aria-selected="true">Web &amp; SEO</button>
+      <button type="button" role="tab" data-tab="social" aria-selected="false">Social Media</button>
+      <button type="button" role="tab" data-tab="photo" aria-selected="false">Photo pro</button>
+      <button type="button" role="tab" data-tab="event" aria-selected="false">Événementiel</button>
+    </div>
+
+    <div class="offer-panel" data-panel="web" role="tabpanel">
+      <div class="plans">
+        <div class="plan">
+          <h3>Site vitrine</h3>
+          <p class="for">Indépendants, commerces, PME</p>
+          <div class="price">Sur devis</div>
+          <ul>
+            <li>Site une page, pensé mobile</li>
+            <li>Textes et photos mis en valeur</li>
+            <li>Bouton WhatsApp et formulaire</li>
+            <li>Référencement Google de base</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un devis pour un site vitrine.">Demander un devis</a>
+        </div>
+        <div class="plan featured">
+          <span class="tag">Le plus complet</span>
+          <h3>Site multi-pages</h3>
+          <p class="for">Entreprises, institutions, marques</p>
+          <div class="price">Sur devis</div>
+          <ul>
+            <li>Jusqu'à 6 pages</li>
+            <li>Architecture et contenus optimisés SEO</li>
+            <li>Nom de domaine et mise en ligne</li>
+            <li>Formation à la mise à jour</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un devis pour un site multi-pages.">Demander un devis</a>
+        </div>
+        <div class="plan">
+          <h3>Maintenance</h3>
+          <p class="for">Sites déjà en ligne</p>
+          <div class="price">Sur devis <small>/ mois</small></div>
+          <ul>
+            <li>Mises à jour de contenus</li>
+            <li>Suivi de la vitesse et du référencement</li>
+            <li>Sauvegardes et sécurité</li>
+            <li>Rapport mensuel</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un devis pour la maintenance de mon site.">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-panel" data-panel="social" role="tabpanel" hidden>
+      <div class="plans">
+        <div class="plan">
+          <h3>Essentiel</h3>
+          <p class="for">Démarrer une présence régulière</p>
+          <div class="price">Sur devis <small>/ mois</small></div>
+          <ul>
+            <li>1 réseau (Facebook ou Instagram)</li>
+            <li>Calendrier éditorial mensuel</li>
+            <li>Création des visuels et légendes</li>
+            <li>Bilan mensuel</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par la formule Social Media Essentiel.">Demander un devis</a>
+        </div>
+        <div class="plan featured">
+          <span class="tag">Recommandé</span>
+          <h3>Croissance</h3>
+          <p class="for">Gagner en visibilité et en contacts</p>
+          <div class="price">Sur devis <small>/ mois</small></div>
+          <ul>
+            <li>Facebook + Instagram</li>
+            <li>Posts, carrousels et Reels</li>
+            <li>Modération et réponses aux messages</li>
+            <li>Rapport de performance</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par la formule Social Media Croissance.">Demander un devis</a>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p class="for">Marques actives, lancements</p>
+          <div class="price">Sur devis <small>/ mois</small></div>
+          <ul>
+            <li>Stratégie complète multi-réseaux</li>
+            <li>Shooting photo mensuel inclus</li>
+            <li>Campagnes publicitaires sponsorisées</li>
+            <li>Point stratégique mensuel</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par la formule Social Media Premium.">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-panel" data-panel="photo" role="tabpanel" hidden>
+      <div class="plans">
+        <div class="plan">
+          <h3>Retouche Express</h3>
+          <p class="for">Vous avez déjà des photos ? On les remet à niveau.</p>
+          <div class="price">25 000 <small>F CFA</small></div>
+          <p class="unit">le pack de 10 photos</p>
+          <ul>
+            <li>Lumière, couleurs et netteté corrigées</li>
+            <li>Recadrage et fonds nettoyés</li>
+            <li>Formats réseaux sociaux et plateformes</li>
+            <li>Livraison sous 72 h</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite faire retoucher mes photos (Retouche Express).">Envoyer mes photos</a>
+        </div>
+        <div class="plan featured">
+          <span class="tag">Idéal restaurants</span>
+          <h3>Shooting Food &amp; Produit</h3>
+          <p class="for">Menu, plats, vitrine, produits de boutique</p>
+          <div class="price">75 000 <small>F CFA</small></div>
+          <p class="unit">séance sur place, 2 à 3 h</p>
+          <ul>
+            <li>Jusqu'à 20 plats ou produits</li>
+            <li>Retouche professionnelle + optimisation IA</li>
+            <li>Visuels pour menu, Glovo, Yango, Instagram</li>
+            <li>Livraison sous 5 jours</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un shooting Food & Produit pour mon établissement.">Réserver un shooting</a>
+        </div>
+        <div class="plan">
+          <h3>Aménagement virtuel</h3>
+          <p class="for">Agences immobilières, promoteurs, bailleurs</p>
+          <div class="price">40 000 <small>F CFA</small></div>
+          <p class="unit">le pack de 6 pièces · 8 000 F la pièce</p>
+          <ul>
+            <li>Pièces vides meublées virtuellement</li>
+            <li>Plusieurs styles au choix</li>
+            <li>Mention « aménagement virtuel » incluse</li>
+            <li>Livraison sous 72 h</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un devis pour de l'aménagement virtuel de biens immobiliers.">Demander un devis</a>
+        </div>
+      </div>
+      <div class="subs">
+        <div class="sub">
+          <div><h3>Abonnement Resto</h3><p>1 mini-shooting par mois + 10 visuels retouchés pour vos réseaux et nouveautés.</p></div>
+          <div class="price">60 000 <small>F / mois</small></div>
+        </div>
+        <div class="sub">
+          <div><h3>Abonnement Immobilier</h3><p>20 pièces retouchées ou aménagées chaque mois pour vos nouvelles annonces.</p></div>
+          <div class="price">120 000 <small>F / mois</small></div>
+        </div>
+      </div>
+      <p class="pro-promise"><span>🤝</span><span><strong>Notre engagement :</strong> on améliore vos vraies photos, on n'invente rien. Chaque visuel immobilier modifié porte la mention « aménagement virtuel ».</span></p>
+    </div>
+
+    <div class="offer-panel" data-panel="event" role="tabpanel" hidden>
+      <div class="plans">
+        <div class="plan">
+          <h3>Shooting</h3>
+          <p class="for">Portrait, couple, famille, photo pro</p>
+          <div class="price">35 000 <small>F CFA</small></div>
+          <ul>
+            <li>1 h de séance</li>
+            <li>1 lieu à Abidjan</li>
+            <li>15 photos retouchées</li>
+            <li>Livraison sous 5 jours</li>
+          </ul>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour, je suis intéressé(e) par le forfait Shooting.">Choisir Shooting</a>
+        </div>
+        <div class="plan featured">
+          <span class="tag">Le plus demandé</span>
+          <h3>Événement</h3>
+          <p class="for">Anniversaire, baptême, dot, séminaire</p>
+          <div class="price">110 000 <small>F CFA</small></div>
+          <ul>
+            <li>Jusqu'à 5 h de couverture</li>
+            <li>100 photos retouchées</li>
+            <li>Galerie en ligne privée</li>
+            <li>Livraison sous 10 jours</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour, je suis intéressé(e) par le forfait Événement.">Choisir Événement</a>
+        </div>
+        <div class="plan">
+          <h3>Mariage</h3>
+          <p class="for">Mariage civil, religieux ou dot + mariage</p>
+          <div class="price"><small class="from">À partir de</small>200 000 <small>F CFA</small></div>
+          <ul>
+            <li>Journée complète</li>
+            <li>250 photos retouchées</li>
+            <li>Séance couple offerte</li>
+            <li>Galerie en ligne + clé USB</li>
+          </ul>
+          <p class="budget-note">💬 <strong>Votre mariage, votre budget.</strong> Appelez-nous : on adapte la formule.<br><a href="tel:+2250778639867">📞 07 78 63 98 67</a></p>
+          <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour, je prépare mon mariage et j'aimerais une formule adaptée à mon budget.">Parler de mon budget</a>
+        </div>
+      </div>
+      <p class="plans-note">Acompte de 50 % pour bloquer la date · Frais de déplacement hors Abidjan sur devis</p>
+    </div>
+    <p class="plans-note">Paiement Wave / Mobile Money · Virement ou PayPal pour l'international</p>
+  </div>
+</section>
+
+<section class="slides-section" id="slides">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Supports B2B · L'usine à slides</p>
+      <h2>Votre présentation pro, <em>livrée demain matin</em>.</h2>
+      <p>Vous avez le fond, on s'occupe de la forme. Envoyez votre brouillon avant 20 h, recevez un deck soigné avant 8 h.</p>
+    </div>
+    <div class="slides-steps">
+      <div><strong>Avant 20 h</strong><span>Vous envoyez votre brouillon : PowerPoint, Word, PDF ou simples notes.</span></div>
+      <div><strong>La nuit</strong><span>Mise en page assistée par IA, puis finitions à la main : alignements, couleurs, typographie, graphiques.</span></div>
+      <div><strong>Avant 8 h</strong><span>Vous recevez le PowerPoint modifiable + le PDF. 1 retouche incluse, sous 4 h.</span></div>
+    </div>
+    <div class="plans plans-4">
+      <div class="plan">
+        <h3>Express</h3>
+        <p class="for">Une présentation, une fois</p>
+        <div class="price">25 000 <small>F CFA</small></div>
+        <p class="unit">jusqu'à 10 slides · international&nbsp;: 49&nbsp;€</p>
+        <ul>
+          <li>Livraison sous 24 h</li>
+          <li>PowerPoint + PDF</li>
+          <li>1 retouche incluse</li>
+          <li>Slide supplémentaire : 2&nbsp;500&nbsp;F</li>
+        </ul>
+        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite faire remettre en page une présentation (formule Express).">Envoyer mon brouillon</a>
+      </div>
+      <div class="plan">
+        <h3>Starter</h3>
+        <p class="for">Consultants, indépendants</p>
+        <div class="price">150 000 <small>F / mois</small></div>
+        <p class="unit">40 slides par mois · international&nbsp;: 290&nbsp;€</p>
+        <ul>
+          <li>Modèle à vos couleurs inclus</li>
+          <li>Livraison sous 24 h</li>
+          <li>1 retouche par présentation</li>
+          <li>Slides reportables 1 mois</li>
+        </ul>
+        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Starter.">Choisir Starter</a>
+      </div>
+      <div class="plan featured">
+        <span class="tag">Recommandé</span>
+        <h3>Pro</h3>
+        <p class="for">Commerciaux, dirigeants</p>
+        <div class="price">300 000 <small>F / mois</small></div>
+        <p class="unit">100 slides par mois · international&nbsp;: 550&nbsp;€</p>
+        <ul>
+          <li>Livraison prioritaire</li>
+          <li>2 retouches par présentation</li>
+          <li>Modèle à vos couleurs inclus</li>
+          <li>Slides reportables 1 mois</li>
+        </ul>
+        <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Pro.">Choisir Pro</a>
+      </div>
+      <div class="plan">
+        <h3>Équipe</h3>
+        <p class="for">Cabinets, PME, ONG</p>
+        <div class="price">500 000 <small>F / mois</small></div>
+        <p class="unit">200 slides par mois · international&nbsp;: 790&nbsp;€</p>
+        <ul>
+          <li>Modèle de marque complet</li>
+          <li>Plusieurs demandeurs autorisés</li>
+          <li>Livraison prioritaire</li>
+          <li>Interlocuteur dédié</li>
+        </ul>
+        <a class="btn btn-dark wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Équipe.">Choisir Équipe</a>
+      </div>
+    </div>
+    <p class="pro-promise"><span>🔒</span><span><strong>Confidentialité garantie :</strong> vos documents ne sont ni partagés ni réutilisés. Accord de confidentialité sur simple demande. Abonnements : engagement de 3 mois.</span></p>
+    <div class="pro-ctas">
+      <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, j'aimerais tester l'Usine à slides : je vous envoie 5 slides.">Tester gratuitement sur 5 slides</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="methode">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Méthode</p>
+      <h2>Une seule équipe, du diagnostic aux résultats.</h2>
     </div>
     <div class="steps">
-      <div class="step"><h3>Vous nous écrivez</h3><p>Date, lieu, type d'événement : on vérifie la disponibilité sur WhatsApp.</p></div>
-      <div class="step"><h3>On bloque la date</h3><p>Choix du forfait et acompte de 50 % par Wave ou Mobile Money.</p></div>
-      <div class="step"><h3>Le jour J</h3><p>On capture les moments clés, en toute discrétion.</p></div>
-      <div class="step"><h3>Livraison</h3><p>Photos retouchées livrées en HD dans une galerie en ligne.</p></div>
+      <div class="step"><h3>Diagnostic</h3><p>On écoute vos objectifs et on analyse votre présence actuelle : site, réseaux, image.</p></div>
+      <div class="step"><h3>Stratégie</h3><p>Un plan clair : messages, canaux, calendrier et budget.</p></div>
+      <div class="step"><h3>Création</h3><p>Site, visuels, photos, vidéos, présentations : tout est produit par l'agence.</p></div>
+      <div class="step"><h3>Diffusion &amp; suivi</h3><p>Publication, modération et rapport de résultats pour ajuster en continu.</p></div>
     </div>
   </div>
 </section>
@@ -798,12 +1030,12 @@ footer a:hover { color: var(--accent); }
       <h2>Tout ce qu'il faut savoir.</h2>
     </div>
     <div class="faq">
-      <details><summary>Combien de temps à l'avance faut-il réserver ?</summary><p>Idéalement 3 à 4 semaines avant, et plus tôt pour les mariages et les week-ends chargés. Écrivez-nous même pour une date proche : on vérifie tout de suite.</p></details>
-      <details><summary>Comment se passe le paiement ?</summary><p>Un acompte de 50 % bloque votre date, le solde est réglé le jour de l'événement. Paiement par Wave ou Mobile Money.</p></details>
-      <details><summary>Quand recevons-nous les photos ?</summary><p>Selon le forfait, entre 5 et 15 jours, via une galerie en ligne privée pour télécharger et partager facilement.</p></details>
-      <details><summary>Vous déplacez-vous hors d'Abidjan ?</summary><p>Oui. Les frais de transport (et d'hébergement si besoin) sont indiqués dans le devis.</p></details>
-      <details><summary>Utilisez-vous l'intelligence artificielle ?</summary><p>Uniquement pour la retouche de nos offres professionnelles : lumière, fonds, recadrage, aménagement virtuel de pièces vides. Vos photos d'événements restent des photos naturelles, retouchées à la main.</p></details>
-      <details><summary>Peut-on adapter un forfait ?</summary><p>Bien sûr : heures supplémentaires, photos en plus, album imprimé… Dites-nous ce dont vous avez besoin.</p></details>
+      <details><summary>Quels services propose 2KYD Agency ?</summary><p>Création de sites web et référencement, gestion des réseaux sociaux, photo et vidéo (événementiel, culinaire, produits, immobilier) et supports B2B comme la remise en page de présentations. Vous pouvez prendre un seul service ou les combiner.</p></details>
+      <details><summary>Comment obtenir un devis ?</summary><p>Écrivez-nous sur WhatsApp en décrivant votre besoin. Nous revenons vers vous rapidement avec une proposition claire, sans engagement.</p></details>
+      <details><summary>Comment se passe le paiement ?</summary><p>Par Wave ou Mobile Money en Côte d'Ivoire, par virement ou PayPal pour l'international. Un acompte de 50 % lance le projet ; les abonnements se règlent en début de mois.</p></details>
+      <details><summary>Travaillez-vous avec des clients hors de Côte d'Ivoire ?</summary><p>Oui. Le web, les réseaux sociaux et l'Usine à slides se gèrent entièrement à distance. Pour la photo, nous nous déplaçons hors d'Abidjan sur devis.</p></details>
+      <details><summary>Utilisez-vous l'intelligence artificielle ?</summary><p>Oui, comme outil : pour accélérer la retouche, l'aménagement virtuel ou la mise en page de slides. Chaque livrable est ensuite vérifié et finalisé à la main. Les photos d'événements restent des photos naturelles.</p></details>
+      <details><summary>Mes documents restent-ils confidentiels ?</summary><p>Oui. Vos fichiers ne sont ni partagés ni réutilisés, et nous signons un accord de confidentialité si vous le souhaitez.</p></details>
     </div>
   </div>
 </section>
@@ -811,28 +1043,29 @@ footer a:hover { color: var(--accent); }
 <section class="cta-section">
   <div class="wrap">
     <div class="cta">
-      <p class="eyebrow">Votre date est-elle libre ?</p>
-      <h2>Parlons de votre événement.</h2>
-      <p>Envoyez-nous la date, le lieu et le type d'événement. Réponse rapide, sans engagement.</p>
-      <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, voici mon événement : date / lieu / type.">Écrire sur WhatsApp</a>
+      <p class="eyebrow">Un projet en tête ?</p>
+      <h2>Parlons de votre image.</h2>
+      <p>Site, réseaux sociaux, photos ou présentations : décrivez votre besoin, on vous répond rapidement avec une proposition claire.</p>
+      <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, voici mon projet :">Écrire sur WhatsApp</a>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
     <div class="foot">
       <div>
-        <a href="#accueil" class="logo"><img src="assets/logo-2kyd.png" alt="Logo 2KYD Agency" width="42" height="42"><span>2KYD<small>PHOTOGRAPHIE</small></span></a>
-        <p class="foot-about">Photographe événementiel à Abidjan. Des images naturelles pour garder vos plus beaux souvenirs, et des visuels pro pour restaurants, boutiques et immobilier.</p>
+        <a href="#accueil" class="logo"><img src="assets/logo-2kyd.png" alt="Logo 2KYD Agency" width="42" height="42"><span>2KYD<small>AGENCE DIGITALE</small></span></a>
+        <p class="foot-about">Créer • Communiquer • Impacter. Agence de communication digitale 360° à Abidjan : web, réseaux sociaux, photo &amp; vidéo, supports B2B.</p>
       </div>
       <div>
         <h4>NAVIGATION</h4>
         <ul>
-          <li><a href="#prestations">Prestations</a></li>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#forfaits">Forfaits</a></li>
-          <li><a href="#pro">Professionnels</a></li>
+          <li><a href="#expertises">Expertises</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#offres">Offres</a></li>
+          <li><a href="#slides">L'usine à slides</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
@@ -847,12 +1080,12 @@ footer a:hover { color: var(--accent); }
     </div>
     <div class="copy">
       <span>© 2026 2KYD Agency. Tous droits réservés.</span>
-      <span>Prix en F CFA · Paiement Wave / Mobile Money</span>
+      <span>Web · Social Media · Photo &amp; Vidéo · Supports B2B</span>
     </div>
   </div>
 </footer>
 
-<a class="wa-float wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite des informations sur vos prestations photo." aria-label="WhatsApp">
+<a class="wa-float wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite des informations sur vos services." aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2A10 10 0 0 0 3.4 17.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3Z"/></svg>
 </a>
 
@@ -918,11 +1151,22 @@ footer a:hover { color: var(--accent); }
     show(0);
   }
 
+  // Onglets des offres
+  var otabs = document.querySelectorAll(".offer-tabs button");
+  function openTab(key) {
+    otabs.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.tab === key); });
+    document.querySelectorAll(".offer-panel").forEach(function (p) { p.hidden = p.dataset.panel !== key; });
+  }
+  otabs.forEach(function (b) { b.addEventListener("click", function () { openTab(b.dataset.tab); }); });
+  document.querySelectorAll(".expertise [data-tab]").forEach(function (a) {
+    a.addEventListener("click", function () { openTab(a.dataset.tab); });
+  });
+
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduce || !("IntersectionObserver" in window)) return;
 
   // Apparition des blocs au défilement
-  [".section-head", ".cards .card", ".gallery figure", ".ba-block", ".plans .plan", ".subs .sub", ".pro-promise", ".steps .step", ".faq > *", ".cta", ".foot > *"]
+  [".section-head", ".cards .card", ".gallery figure", ".ba-block", ".plans .plan", ".subs .sub", ".slides-steps > div", ".pro-promise", ".steps .step", ".faq > *", ".cta", ".foot > *"]
     .forEach(function (sel) {
       document.querySelectorAll(sel).forEach(function (el, i) {
         el.classList.add("rv");
