@@ -511,7 +511,7 @@ footer a:hover { color: var(--accent); }
             <span class="ba-focus"></span>
           </div>
           <div class="ba-meta"><span>↔ Glissez pour comparer</span><span id="ba-title"></span></div>
-          <p class="ba-meta"><em>Exemple de démonstration, images générées par IA : ce n'est pas un travail client.</em></p>
+          <p class="ba-meta"><em>Exemples de démonstration (images d'illustration) : ce ne sont pas des travaux clients.</em></p>
         </div>
       </article>
 
@@ -836,8 +836,9 @@ footer a:hover { color: var(--accent); }
 
   // Comparateur avant / après (passer ready à true quand les images sont dans assets/demo/)
   var BA = [
-    { key: "salon", tab: "Immobilier", title: "Aménagement virtuel" },
-    { key: "plat", tab: "Restaurant", title: "Photo de plat", ready: false },
+    { key: "salon", tab: "Salon", title: "Aménagement virtuel · salon" },
+    { key: "chambre", tab: "Chambre", title: "Aménagement virtuel · chambre" },
+    { key: "plat", tab: "Restaurant", title: "Photo de plat" },
     { key: "produit", tab: "Boutique", title: "Photo de boutique", ready: false }
   ].filter(function (ex) { return ex.ready !== false; });
   var ba = document.getElementById("ba");
