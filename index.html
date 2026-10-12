@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2KYD Agency — Social Media & Photographie à Abidjan</title>
-<meta name="description" content="2KYD Agency, agence de communication digitale à Abidjan : gestion des réseaux sociaux, photo professionnelle pour restaurants, boutiques et immobilier, photographie de mariage, dot et événements. Devis sur WhatsApp.">
+<title>2KYD Agency — Social Media, Photo & Présentations à Abidjan</title>
+<meta name="description" content="2KYD Agency, agence de communication digitale à Abidjan : gestion et audit des réseaux sociaux, photo professionnelle, photographie de mariage et dot, présentations PowerPoint livrées en 24 h. Devis sur WhatsApp.">
 <meta name="theme-color" content="#1c0f13">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
@@ -31,7 +31,7 @@
   "logo": "https://2kydagency.me/assets/logo-2kyd.png",
   "image": "https://images.pixieset.com/427825321/5a9669b8b335a849bb358d330ad71c76-large.JPG",
   "telephone": "+2250778639867",
-  "priceRange": "25 000 – 250 000 FCFA",
+  "priceRange": "15 000 – 300 000 FCFA",
   "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" },
   "areaServed": "Côte d'Ivoire",
   "sameAs": ["https://www.instagram.com/2kydagency"],
@@ -41,7 +41,9 @@
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestion des réseaux sociaux (Facebook, Instagram)" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photographie professionnelle : culinaire, produits, immobilier" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photographie événementielle : mariage, dot, anniversaire, baptême" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photographie événementielle : mariage, dot, anniversaire, baptême" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Audit des réseaux sociaux" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "L'usine à slides : présentations PowerPoint livrées en 24 h" } }
     ]
   }
 }
@@ -236,6 +238,14 @@ header.scrolled, header.menu { background: rgba(28, 15, 19, .94); backdrop-filte
 .tabs button:hover { color: var(--text); }
 .tabs button[aria-selected="true"] { background: var(--ink); color: var(--on-dark); }
 .panel[hidden] { display: none; }
+.plans.plans-2 { margin-inline: auto; grid-template-columns: repeat(2, 1fr); max-width: 820px; }
+.plans.plans-4 { grid-template-columns: repeat(4, 1fr); }
+.plans-4 .plan { padding: 32px 22px; }
+.plans-4 .price { font-size: 2.1rem; }
+.timeline { display: grid; gap: 14px; }
+.timeline div { display: flex; gap: 18px; align-items: flex-start; padding: 20px 22px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-md); }
+.timeline strong { flex: none; min-width: 92px; font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.timeline span { font-size: .94rem; color: var(--muted); }
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
 .plan { position: relative; display: flex; flex-direction: column; padding: 36px 30px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); transition: transform .35s var(--ease), box-shadow .35s, border-color .2s; }
 .plan:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: transparent; }
@@ -317,6 +327,7 @@ footer a:hover { color: var(--accent); }
   .nav.open ul { display: flex; flex-direction: column; position: absolute; top: 76px; left: 0; right: 0; padding: 10px 24px 24px; background: var(--ink); border-bottom: 1px solid var(--line-dark); }
   .nav.open ul a { display: block; padding: 13px 0; font-size: 1.1rem; border-bottom: 1px solid var(--line-dark); }
 }
+@media (max-width: 1180px) and (min-width: 961px) { .plans.plans-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 960px) {
   section { padding: 84px 0; }
   .hero { min-height: auto; padding: 120px 0 70px; }
@@ -325,7 +336,7 @@ footer a:hover { color: var(--accent); }
   .stamp { left: auto; right: -6px; top: -34px; width: 100px; height: 100px; font-size: .6rem; }
   .service, .service.flip { grid-template-columns: 1fr; gap: 36px; padding: 32px 24px; }
   .service.flip .service-media { order: 0; }
-  .plans, .subs { grid-template-columns: 1fr; max-width: 480px; }
+  .plans, .subs, .plans.plans-2, .plans.plans-4 { grid-template-columns: 1fr; max-width: 480px; }
   .steps { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
   .faq-grid { grid-template-columns: 1fr; gap: 10px; }
   .foot { grid-template-columns: 1fr; }
@@ -402,7 +413,7 @@ footer a:hover { color: var(--accent); }
     <div>
       <p class="kicker">Agence de communication digitale · Abidjan</p>
       <h1><span class="l">Créer.</span><span class="l">Communiquer.</span><span class="l"><em>Impacter.</em></span></h1>
-      <p class="lead">On gère vos réseaux sociaux et on produit les images qui font la différence : vos plats, vos produits, vos biens immobiliers et vos plus beaux événements.</p>
+      <p class="lead">On audite et on gère vos réseaux sociaux, on produit les images qui font la différence et on met en forme vos présentations pro, livrées en 24 h.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD Agency, je souhaite un devis.">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>
@@ -414,7 +425,7 @@ footer a:hover { color: var(--accent); }
         <span class="chip"><b>✦</b> Social Media</span>
         <span class="chip"><b>✦</b> Photo pro</span>
         <span class="chip"><b>✦</b> Événementiel</span>
-        <span class="chip"><b>✦</b> Wave / Mobile Money</span>
+        <span class="chip"><b>✦</b> Présentations</span>
       </div>
     </div>
     <div class="collage">
@@ -428,8 +439,8 @@ footer a:hover { color: var(--accent); }
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Gestion Instagram</span><span>Facebook</span><span>Photo culinaire</span><span>Photo produit</span><span>Immobilier</span><span>Mariage</span><span>Dot</span><span>Anniversaire</span><span>Baptême</span>
-    <span>Gestion Instagram</span><span>Facebook</span><span>Photo culinaire</span><span>Photo produit</span><span>Immobilier</span><span>Mariage</span><span>Dot</span><span>Anniversaire</span><span>Baptême</span>
+    <span>Audit réseaux sociaux</span><span>Gestion Instagram</span><span>Facebook</span><span>Présentations PowerPoint</span><span>Photo culinaire</span><span>Photo produit</span><span>Immobilier</span><span>Mariage</span><span>Dot</span><span>Anniversaire</span><span>Baptême</span>
+    <span>Audit réseaux sociaux</span><span>Gestion Instagram</span><span>Facebook</span><span>Présentations PowerPoint</span><span>Photo culinaire</span><span>Photo produit</span><span>Immobilier</span><span>Mariage</span><span>Dot</span><span>Anniversaire</span><span>Baptême</span>
   </div>
 </div>
 
@@ -438,7 +449,7 @@ footer a:hover { color: var(--accent); }
   <div class="wrap">
     <div class="head">
       <p class="kicker">Nos expertises</p>
-      <h2>Trois savoir-faire, <em>une même exigence</em>.</h2>
+      <h2>Quatre savoir-faire, <em>une même exigence</em>.</h2>
       <p>Des contenus qui vous ressemblent, publiés au bon moment, pour des clients qui vous choisissent.</p>
     </div>
 
@@ -449,6 +460,7 @@ footer a:hover { color: var(--accent); }
           <h3>Social Media</h3>
           <p class="intro">On prend en main vos pages Facebook et Instagram : stratégie, création, publication et réponses à votre communauté.</p>
           <ul class="ticks">
+            <li>Audit de vos pages et plan d'action</li>
             <li>Calendrier éditorial mensuel</li>
             <li>Posts, carrousels et Reels aux couleurs de votre marque</li>
             <li>Modération et réponses aux messages</li>
@@ -537,6 +549,29 @@ footer a:hover { color: var(--accent); }
           <figure class="s3"><img src="https://images.pixieset.com/427825321/e1aea84ced62e347c3363cad5ad26bce-large.JPG" alt="Main ornée de henné et bague de fiançailles" loading="lazy"></figure>
         </div>
       </article>
+
+      <article class="service flip">
+        <div>
+          <div class="num">04</div>
+          <h3>L'usine à slides</h3>
+          <p class="intro">Vous avez le fond, on s'occupe de la forme. Envoyez votre brouillon le soir, recevez une présentation pro le lendemain matin.</p>
+          <ul class="ticks">
+            <li>Propositions commerciales, rapports, pitchs</li>
+            <li>Aux couleurs de votre marque</li>
+            <li>PowerPoint modifiable + PDF</li>
+            <li>Confidentialité garantie</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-ink" href="#formules" data-open="slides">Voir les formules</a>
+            <a class="link-arrow wa-link" href="#" data-msg="Bonjour 2KYD, j'aimerais tester l'Usine à slides sur 5 slides.">Test gratuit sur 5 slides</a>
+          </div>
+        </div>
+        <div class="service-media timeline">
+          <div><strong>Avant 20 h</strong><span>Vous envoyez votre brouillon : PowerPoint, Word, PDF ou simples notes.</span></div>
+          <div><strong>La nuit</strong><span>Mise en page, couleurs, typographie, icônes et graphiques.</span></div>
+          <div><strong>Avant 8 h</strong><span>Vous recevez votre présentation finalisée. 1 retouche incluse.</span></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -552,8 +587,10 @@ footer a:hover { color: var(--accent); }
 
     <div class="tabs" role="tablist" aria-label="Expertises">
       <button type="button" role="tab" data-tab="social" aria-selected="true">Social Media</button>
+      <button type="button" role="tab" data-tab="audit" aria-selected="false">Audit</button>
       <button type="button" role="tab" data-tab="photo" aria-selected="false">Photo pro</button>
       <button type="button" role="tab" data-tab="event" aria-selected="false">Événementiel</button>
+      <button type="button" role="tab" data-tab="slides" aria-selected="false">Présentations</button>
     </div>
 
     <div class="panel" data-panel="social" role="tabpanel">
@@ -594,6 +631,37 @@ footer a:hover { color: var(--accent); }
             <li>Point stratégique chaque mois</li>
           </ul>
           <a class="btn btn-soft wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par la formule Social Media Premium.">Choisir Premium</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="audit" role="tabpanel" hidden>
+      <div class="plans plans-2">
+        <div class="plan">
+          <h3>Audit Express</h3>
+          <p class="for">Un premier regard sur votre page</p>
+          <div class="price">Gratuit</div>
+          <ul class="ticks">
+            <li>Analyse rapide de votre page Instagram ou Facebook</li>
+            <li>3 points forts, 3 points à améliorer</li>
+            <li>3 idées concrètes à appliquer</li>
+            <li>Envoyé par message sous 48 h</li>
+          </ul>
+          <a class="btn btn-soft wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un audit express gratuit de ma page.">Demander mon audit gratuit</a>
+        </div>
+        <div class="plan hot">
+          <span class="tag">Le plus complet</span>
+          <h3>Audit complet</h3>
+          <p class="for">Diagnostic détaillé + plan d'action</p>
+          <div class="price">50 000 <small>F CFA</small></div>
+          <p class="unit">offert si vous prenez un abonnement Social Media de 3 mois</p>
+          <ul class="ticks">
+            <li>Analyse de vos pages, contenus et statistiques</li>
+            <li>Comparaison avec 3 concurrents</li>
+            <li>Rapport PDF + séance d'explication de 30 min</li>
+            <li>Plan d'action et calendrier sur 30 jours</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite un audit complet de mes réseaux sociaux.">Réserver mon audit</a>
         </div>
       </div>
     </div>
@@ -692,7 +760,66 @@ footer a:hover { color: var(--accent); }
       <p class="foot-note">Acompte de 50 % pour bloquer la date · Déplacement hors Abidjan sur devis</p>
     </div>
 
-    <p class="foot-note">Social Media : engagement recommandé de 3 mois · Paiement Wave / Mobile Money · Devis gratuit et sans engagement</p>
+    <div class="panel" data-panel="slides" role="tabpanel" hidden>
+      <div class="plans plans-4">
+        <div class="plan">
+          <h3>Express</h3>
+          <p class="for">Une présentation, une fois</p>
+          <div class="price">15 000 <small>F CFA</small></div>
+          <p class="unit">jusqu'à 10 slides · international&nbsp;: 49&nbsp;€</p>
+          <ul class="ticks">
+            <li>Livraison sous 24 h</li>
+            <li>PowerPoint + PDF</li>
+            <li>1 retouche incluse</li>
+            <li>Slide en plus : 2&nbsp;500&nbsp;F</li>
+          </ul>
+          <a class="btn btn-soft wa-link" href="#" data-msg="Bonjour 2KYD, je souhaite faire remettre en page une présentation (formule Express).">Envoyer mon brouillon</a>
+        </div>
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="for">Consultants, indépendants</p>
+          <div class="price">100 000 <small>F / mois</small></div>
+          <p class="unit">40 slides par mois · international&nbsp;: 290&nbsp;€</p>
+          <ul class="ticks">
+            <li>Modèle à vos couleurs</li>
+            <li>Livraison sous 24 h</li>
+            <li>1 retouche par présentation</li>
+            <li>Slides reportables 1 mois</li>
+          </ul>
+          <a class="btn btn-soft wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Starter.">Choisir Starter</a>
+        </div>
+        <div class="plan hot">
+          <span class="tag">Recommandé</span>
+          <h3>Pro</h3>
+          <p class="for">Commerciaux, dirigeants</p>
+          <div class="price">200 000 <small>F / mois</small></div>
+          <p class="unit">100 slides par mois · international&nbsp;: 550&nbsp;€</p>
+          <ul class="ticks">
+            <li>Livraison prioritaire</li>
+            <li>2 retouches par présentation</li>
+            <li>Modèle à vos couleurs</li>
+            <li>Slides reportables 1 mois</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Pro.">Choisir Pro</a>
+        </div>
+        <div class="plan">
+          <h3>Équipe</h3>
+          <p class="for">Cabinets, PME, ONG</p>
+          <div class="price">300 000 <small>F / mois</small></div>
+          <p class="unit">200 slides par mois · international&nbsp;: 790&nbsp;€</p>
+          <ul class="ticks">
+            <li>Modèle de marque complet</li>
+            <li>Plusieurs demandeurs</li>
+            <li>Livraison prioritaire</li>
+            <li>Interlocuteur dédié</li>
+          </ul>
+          <a class="btn btn-soft wa-link" href="#" data-msg="Bonjour 2KYD, je suis intéressé(e) par l'abonnement Usine à slides Équipe.">Choisir Équipe</a>
+        </div>
+      </div>
+      <p class="note"><span>🔒</span><span><strong>Confidentialité garantie :</strong> vos documents ne sont ni partagés ni réutilisés. Accord de confidentialité sur demande. Abonnements : engagement de 3 mois.</span></p>
+    </div>
+
+    <p class="foot-note">Social Media : engagement recommandé de 3 mois · Paiement Wave / Mobile Money · Virement ou PayPal pour l'international</p>
   </div>
 </section>
 
@@ -749,6 +876,8 @@ footer a:hover { color: var(--accent); }
       <details><summary>Combien de temps à l'avance réserver un événement ?</summary><p>Idéalement 3 à 4 semaines avant, plus tôt pour les mariages. Écrivez-nous même pour une date proche : on vérifie tout de suite.</p></details>
       <details><summary>Quand recevons-nous les photos ?</summary><p>De 72 h à 10 jours selon la formule, via une galerie en ligne privée pour télécharger et partager facilement.</p></details>
       <details><summary>Faut-il un engagement pour la gestion des réseaux ?</summary><p>Nous recommandons 3 mois minimum : c'est le temps nécessaire pour installer une ligne éditoriale et voir les premiers résultats.</p></details>
+      <details><summary>Que contient l'audit gratuit ?</summary><p>Une analyse rapide de votre page : 3 points forts, 3 points à améliorer et 3 idées concrètes. Sans engagement, envoyé par message sous 48 h.</p></details>
+      <details><summary>Mes présentations restent-elles confidentielles ?</summary><p>Oui. Vos documents ne sont ni partagés ni réutilisés, et nous signons un accord de confidentialité si vous le souhaitez.</p></details>
       <details><summary>Utilisez-vous l'intelligence artificielle ?</summary><p>Comme outil, pour accélérer la retouche et l'aménagement virtuel. Chaque image est vérifiée à la main. Vos photos d'événements restent des photos naturelles.</p></details>
       <details><summary>Vous déplacez-vous hors d'Abidjan ?</summary><p>Oui, les frais de transport (et d'hébergement si besoin) sont indiqués dans le devis.</p></details>
     </div>
@@ -773,7 +902,7 @@ footer a:hover { color: var(--accent); }
     <div class="foot">
       <div>
         <a href="#accueil" class="logo"><img src="assets/logo-2kyd.png" alt="Logo 2KYD Agency" width="44" height="44"><span>2KYD<small>AGENCE DIGITALE</small></span></a>
-        <p class="foot-about">Créer • Communiquer • Impacter. Social Media, photo professionnelle et événementielle à Abidjan. Site vitrine et présentations professionnelles sur demande.</p>
+        <p class="foot-about">Créer • Communiquer • Impacter. Audit et gestion des réseaux sociaux, photo professionnelle et événementielle, présentations PowerPoint livrées en 24 h, à Abidjan.</p>
       </div>
       <div>
         <h4>NAVIGATION</h4>
@@ -795,7 +924,7 @@ footer a:hover { color: var(--accent); }
     </div>
     <div class="copy">
       <span>© 2026 2KYD Agency. Tous droits réservés.</span>
-      <span>Social Media · Photo pro · Événementiel</span>
+      <span>Social Media · Audit · Photo · Événementiel · Présentations</span>
     </div>
   </div>
 </footer>
